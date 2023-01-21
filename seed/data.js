@@ -1,6 +1,7 @@
 import db from '../db/connection.js';
 import mongoose from 'mongoose';
 import data from './Items.json' assert {type: 'json'}
+import StoreItems from '../models/StoreItems.js';
 
 
 
@@ -11,7 +12,7 @@ import data from './Items.json' assert {type: 'json'}
 const insertData = async () => {
     await db.dropDatabase();
 
-    await Recipe.create(recipeData)
+    await StoreItems.create(data)
 
     await db.close();
 }
