@@ -1,7 +1,7 @@
 import StoreItems from "../models/StoreItems.js"
 
 
-export const getitems = async (req, res) => {
+export const getItems = async (req, res) => {
     try {
       const item = await StoreItems.find();
       res.json(item);
@@ -11,7 +11,7 @@ export const getitems = async (req, res) => {
     }
   };
   
-  export const getitem = async (req, res) => {
+  export const getItem = async (req, res) => {
     try {
       const { id } = req.params;
       const item = await StoreItems.findById(id)
