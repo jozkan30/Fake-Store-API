@@ -10,6 +10,6 @@ router.get("/", (req, res) => {
   res.send(" Nope! Try adding /items to the URL");
 });
 
-router.use("/", itemRoutes );
+router.use("/items", itemRoutes );
 
 export default router;

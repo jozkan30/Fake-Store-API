@@ -4,7 +4,7 @@ import * as controllers from "../controllers/items.js";
 const router = Router();
 
 
-router.get("/items", controllers.getItems);
+router.get("/", controllers.getItems);
 router.get("/:id", controllers.getItem);
 router.post("/", controllers.createItem);
 router.put("/:id", controllers.updateItem);
