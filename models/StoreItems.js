@@ -9,7 +9,7 @@ let StoreItems = new Schema({
     description: {type:String},
     category: {type:String},
     image: {type:String},
-    comments: {type:String}
+    comments: [{type:String}]
 })
 
 
