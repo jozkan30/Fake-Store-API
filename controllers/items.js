@@ -33,7 +33,7 @@ export const createItem = async (req, res) => {
 
 export const updateItem = async (req, res) => {
   const { id } = req.params;
-  const item = await item.findByIdAndUpdate(id, req.body);
+  const item = await StoreItem.findByIdAndUpdate(id, req.body);
   res.status(201).json(item);
 };
 
