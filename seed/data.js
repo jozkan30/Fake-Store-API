@@ -1,17 +1,8 @@
 import db from '../db/connection.js';
-import mongoose from 'mongoose';
 import data from './Items.json' assert {type: 'json'}
 import StoreItems from '../models/StoreItems.js';
 import User from    "../models/users.js";
 import bcrypt from "bcrypt"
-
-
-
-
-
-
-
-
 
 const insertData = async () => {
     await db.dropDatabase();
